@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontend web</title>
+    <style>
+        * {
+            margin:0px;
+        }
+        .class_perent_0 {
+            width:100%;
+            height:110vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .class_perent_0_boy_1 {
+            width:500px;
+            height:110vh;
+            background-image:url('photos/class_1.jpg');
+            background-position:center;
+            background-size:cover;
+            border-radius:10px;
+            border:3px solid black;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .class_perent_1 {
+            width:100%;
+            height:15vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .class_perent_1_boy_1 {
+            width:300px;
+            height:15vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .class_perent_1_child_1 {
+            font-size:28px;
+            font-weight:bold;
+            font-style: italic;
+            color: aliceblue;
+        }
+        .class_block_1 {
+            width:100%;
+            height:2vh;
+        }
+        .class_perent_2 {
+            width:100%;
+            height:60vh;
+            display: flex;
+            justify-content: center
+        }
+        .class_perent_2_boy_1 {
+            width:300px;
+            height:60vh;
+            position: relative;
+        }
+        .class_perent_2_child_1 {
+            width:300px;
+            height:15vh;
+        }
+        .class_perent_2_child_2 {
+            width:300px;
+            height:10vh;
+            color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-size:20px;
+            font-style: italic;
+            opacity:0;
+            animation: 2s linear 5.5s 1 forwards class_child_2;
+        }
+        @keyframes class_child_2 {
+            to {
+                opacity:1;
+            }
+        }
+        .class_perent_2_child_3 {
+            width:300px;
+            height:15vh;
+            position: absolute;
+            bottom:0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .class_child_3_1,
+        .class_child_3_2 {
+            width:140px;
+            height:100px;
+            background:white;
+            border-radius:15px;
+            border: 3px groove black;
+            box-sizing: border-box;
+            filter: blur(15px);
+            animation:3.5s linear 1.5s 1 forwards class_child_one_and_two;
+        }
+        .class_child_3_1 {
+            background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN2NH8svth7jb_3FIWiEIj71-HuQCrqMWUWQ&s');
+            background-position:center;
+            background-size:90px;
+            background-repeat:no-repeat;
+        }
+        .class_child_3_2 {
+            background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVXkdOhKG41RYcI63ryCtrtp-C1KS7aQXQPYn9wzqSkbn7_sA6ShhBm3eoOJTGuVYZts8&usqp=CAU');
+            background-position:center;
+            background-size:160px;
+        }
+        @keyframes class_child_one_and_two {
+            to {
+                transform: translateY(-45vh) rotate(360deg);
+                filter: blur(0px);
+            }
+        }
+        .class_perent_2_block_1 {
+            width:300px;
+            height:5px;
+        }
+        .class_perent_2_child_4 {
+            width:300px;
+            height:200px;
+            display: flex;
+            justify-content: center;
+        }
+        .class_child_4_1 {
+            width:250px;
+            height:200px;
+            border-radius:15px;
+            border:3px solid black;
+            box-sizing: border-box;
+            overflow-y: auto;
+            font-size:20px;
+            font-weight:bold;
+            font-style: italic;
+            color: aliceblue;
+            text-align: center;
+            opacity:0;
+            animation:2.5s linear 7s 1 forwards class_child_4_1;
+        }
+        @keyframes class_child_4_1 {
+            to {
+                opacity:1;
+            }
+        }
+        .class_child_4_1_1 {
+            width:250px;
+            height:120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .class_1_1 {
+            width:150px;
+            height:100px;
+            background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzn3HSe6Cw_w2p2zF6JlBdFV1qQjddX4rkcA&s');
+            background-position:center;
+            background-size: cover;
+            border-radius:10px;
+            border:3px groove black;
+        }
+        .class_block_2 {
+            width:100%;
+            height:1.5vh;
+        }
+        .class_perent_3 {
+            width:100%;
+            height:180px;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+        .class_perent_3_boy_1 {
+            position: absolute;
+            bottom:0px;
+            width:310px;
+            height:150px;
+            background:#444;
+            border-radius:10px;
+            border:3px groove black;
+            box-sizing:border-box;
+            opacity:0;
+            animation:2s linear 12s 1 forwards class_perent_3_boy_1;
+        }
+        @keyframes class_perent_3_boy_1 {
+            to {
+                opacity:1;
+            }
+        }
+        .class_perent_3_child_1 {
+            width:305px;
+            height:30px;
+            border-radius:7px 7px 0px 0px;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .class_perent_3_child_1_1 {
+            font-size:20px;
+            font-weight:bold;
+            font-style:italic;
+            color: aliceblue;
+            text-indent:10px;
+        }
+        .class_perent_3_child_2 {
+            width:305px;
+            height:30px;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .class_perent_3_child_2_1 {
+            font-size:20px;
+            font-weight:bold;
+            font-style:italic;
+            color: aliceblue;
+            text-indent:10px;
+        }
+        .class_perent_3_child_3 {
+            width:305px;
+            height:30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        .class_perent_3_child_3_1 {
+            font-size:20px;
+            font-weight:bold;
+            font-style:italic;
+            color: aliceblue;
+        }
+        .class_perent_3_child_4 {
+            width:305px;
+            height:25.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .class_perent_3_child_4_1 {
+            font-size:20px;
+            font-weight:bold;
+            font-style:italic;
+        }
+        .class_perent_3_child_5 {
+            width:305px;
+            height:25.5px;
+            border-radius:0px 0px 7px 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .class_perent_3_child_5_1 {
+            font-size:20px;
+            font-weight:bold;
+            font-style:italic;
+        }
+        a {
+            color: aliceblue;
+            text-decoration:blue underline;
+        }
+        </style>
+</head>
+<body>
+    <div class="class_perent_0">
+    <div class="class_perent_0_boy_1">   
+    <div class="class_perent_1">
+        <div class="class_perent_1_boy_1">
+            <div class="class_perent_1_child_1">Ты считаешь себя умным ?</div>
+        </div>
+    </div>
+    <div class="class_block_1"></div>
+    <div class="class_perent_2">
+        <div class="class_perent_2_boy_1">
+            <div class="class_perent_2_child_1"></div>
+            <div class="class_perent_2_child_2"><b>А давай проверим твои умственные способности ?</b></div>
+            <div class="class_perent_2_child_3">
+                <div class="class_child_3_1"></div>
+                <div class="class_child_3_2"></div>
+            </div>
+            <div class="class_perent_2_block_1"></div>
+            <div class="class_perent_2_child_4">
+                <div class="class_child_4_1">Суть этого проекта узнать насколько Ты являешся умным. Тебе надо ответить на 5 сложный вопросов и в коце получиз приз. Если ты не сможешь ответить на все 5 вопросов то система решит что с тоюбой делать дальше!<div class="class_child_4_1_1">
+                    <div class="class_1_1"></div>
+                </div></div>
+            </div>
+        </div>
+    </div>
+    <div class="class_block_2"></div>
+    <div class="class_perent_3">
+        <div class="class_perent_3_boy_1">
+            <div class="class_perent_3_child_1">
+                <div class="class_perent_3_child_1_1">Номер разработчика 😃</div>
+            </div>
+            <div class="class_perent_3_child_2">
+                <div class="class_perent_3_child_2_1">+996 000 000 👍</div>
+            </div>
+            <div class="class_perent_3_child_3">
+                <div class="class_perent_3_child_3_1">Делаем сайты Тг:</div>
+            </div>
+            <div class="class_perent_3_child_4">
+                <div class="class_perent_3_child_4_1"><a href="https://t.me/Denil_man" target="_blank">@Denil_men</a></div>
+            </div>
+            <div class="class_perent_3_child_5">
+                <div class="class_perent_3_child_5_1"><a href="https://t.me/Temirova_Diana" target="_blank">@Temirova_Diana</a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
